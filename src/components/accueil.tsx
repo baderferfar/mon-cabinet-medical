@@ -8,7 +8,7 @@ export const Accueil = () => {
 
   return (
     
-    <div id="accueil" className='text-foreground py-25  flex flex-col justify-center text-5xl font-extralight'>
+    <div id="accueil" className='text-foreground py-20 px-5  flex flex-col justify-center text-5xl font-extralight'>
       <p className='text-center'>L&apos;Excellence Médicale au Service de la Beauté des Jambes et du Visage</p>
       <div className='flex justify-center gap-10 mt-10 flex-col sm:flex-row items-center'>
         <Button

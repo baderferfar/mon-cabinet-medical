@@ -4,6 +4,10 @@ import { cn } from "@/lib/utils";
 
 import logo from '@/assets/images/impe.svg'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+
 import {
   Footer,
   FooterBottom,
@@ -40,12 +44,10 @@ export default function FooterSection({
     {
       title: "Informations Pratiques",
       links: [
-        { text: "Adresse", href: "https://www.launchuicomponents.com/" },
-        { text: "27 Avenue de la Grande Armée 75017 Paris", href: "https://www.launchuicomponents.com/" },
-        { text: "Rendez-vous", href: "https://www.launchuicomponents.com/" },
-        { text: "Sur Doctolib ou par téléphone", href: "https://www.launchuicomponents.com/" },
-        { text: "Horaires", href: "https://www.launchuicomponents.com/" },  
-        { text: "Lun-Ven: 9h-18h Sam: 9h-13h", href: "https://www.launchuicomponents.com/" },      
+        { text: "27 Avenue de la Grande Armée 75017 Paris", href: "#" },
+        { text: "(33)-0601020304", href: "#" },
+        { text: "Doctolib ou par téléphone", href: "#" },
+        { text: "Lun-Ven: 9h-18h Sam: 9h-13h", href: "#" },      
       ],
     },
     {
@@ -60,18 +62,18 @@ export default function FooterSection({
         {
       title: "Nos Spécialités",
       links: [
-        { text: "Traitement des varices", href: "https://www.launchuicomponents.com/" },
-        { text: "Injections esthétiques", href: "https://www.launchuicomponents.com/" },
-        { text: "Soins du visage", href: "https://www.launchuicomponents.com/" },
-        { text: "Drainage lymphatiques", href: "https://www.launchuicomponents.com/" },
+        { text: "Traitement des varices", href: "#" },
+        { text: "Injections esthétiques", href: "#" },
+        { text: "Soins du visage", href: "#" },
+        { text: "Drainage lymphatiques", href: "#" },
       ],
     },
     {
       title: "Contact",
       links: [
-        { text: "Discord", href: "https://www.launchuicomponents.com/" },
-        { text: "Twitter", href: "https://www.launchuicomponents.com/" },
-        { text: "Github", href: "https://www.launchuicomponents.com/" },
+        { text: "Facebook", href: "#" },
+        { text: "Instagram", href: "#" },
+        { text: "X", href: "#" },
         { text: "Contact", href: "/contact" },
       ],
     },
@@ -85,6 +87,7 @@ export default function FooterSection({
   className,
 }: FooterProps) {
   return (
+    
     <footer className={cn("bg-emerald-600 w-full mt-8", className)}>
       <div className="max-w-container mx-auto">
         <Footer>
@@ -100,26 +103,28 @@ export default function FooterSection({
                   priority
                 />
                 <div className="flex flex-col  justify-center gap-6">
-                  <h3 className="text-xl font-bold">{name}</h3>
+                  <h3 className="text-xl font-semibold">{name}</h3>
                   <p className="text-sm "> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
                 </div>
               </div>
             </FooterColumn>
             {columns.map((column, index) => (
-              <FooterColumn key={index}>
-                <h3 className="text-md pt-1 font-semibold">{column.title}</h3>
-                {column.links.map((link, linkIndex) => (
-                  <a
-                    key={linkIndex}
-                    href={link.href}
-                    className="text-muted-foreground text-sm"
-                  >
-                    {link.text}
-                  </a>
-                ))}
-              </FooterColumn>
-            ))}
+                <FooterColumn key={index}>
+                  <h3 className="text-md pt-1 font-semibold">{column.title}</h3>
+                  {column.links.map((link, linkIndex) => (
+                    <a
+                      key={linkIndex}
+                      href={link.href}
+                      className="text-muted-foreground text-sm"
+                    >
+                      {link.text}
+                    </a>
+                  ))}
+                </FooterColumn>
+              ))}
+
           </FooterContent>
+          
           <FooterBottom>
             <div>{copyright}</div>
             <div className="flex items-center gap-2">
@@ -134,5 +139,7 @@ export default function FooterSection({
         </Footer>
       </div>
     </footer>
+
+    
   );
 }

@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 interface MobileMenuProps {
   visible?: boolean;
 }
@@ -8,9 +7,9 @@ const MobileMenu  = ({ visible }: MobileMenuProps) => {
   if (!visible) {
     return null;
   }
-
+  
   return (
-    <div className="bg-gradient-to-r text-foreground w-50 absolute top-8 left-0 py-5 flex-col border-1 border-white flex">
+    <div className="bg-foreground text-background w-50 absolute top-8 left-0 py-5 flex-col white flex">
       <div className="flex flex-col gap-4">
         <div className="px-3 text-center hover:underline">
           <Link href="/">Accueil</Link>
