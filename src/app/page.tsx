@@ -9,7 +9,7 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <div className="gap-5 flex flex-col items-center justify-center min-h-screen py-50">  
+    <div className="gap-5 flex flex-col items-center justify-center min-h-screen">  
       <Accueil/>
       <Soins/>
       <Equipe/>
