@@ -9,7 +9,7 @@ const MobileMenu  = ({ visible }: MobileMenuProps) => {
   }
   
   return (
-    <div className="bg-foreground text-background w-50 absolute top-8 left-0 py-5 flex-col white flex">
+    <div className="bg-emerald-500 text-foreground w-40 absolute top-8 left-0 py-5 flex-col white flex">
       <div className="flex flex-col gap-4">
         <div className="px-3 text-center hover:underline">
           <Link href="/">Accueil</Link>

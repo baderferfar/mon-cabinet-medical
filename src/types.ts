@@ -5,11 +5,7 @@ export interface Soin {
     imageUrl: string
     title: string
     traitement: string
-    caracteristique : {
-        libelle_1:string
-        libelle_2:string
-        libelle_3:string
-    }
+
 }
 
 export interface Medecin {
@@ -33,5 +29,15 @@ export interface Contact {
   telephone: string;
   soin: string;
   message: string;
+
+}
+
+export interface ContactInfo {
+  id: string;
+  iconUrl: string;
+  title: string;
+  libelle1: string;
+  libelle2: string;
+  libelle3: string;
 
 }

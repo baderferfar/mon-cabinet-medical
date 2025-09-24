@@ -8,7 +8,7 @@ export const Soins = () => {
   return (
     
     <div className='flex flex-col  gap-5 py-20 px-5'>
-      <div className='text-white  flex justify-center text-3xl font-extralight'>
+      <div className='text-foreground  flex justify-center text-3xl font-extralight'>
         Nos Soins Spécialisés
       </div>
       <div>

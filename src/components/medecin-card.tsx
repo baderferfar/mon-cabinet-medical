@@ -12,12 +12,13 @@
  export const MedecinCard: React.FC<MedecinCardProps> = ({data}) => {
   
    return (
-     <div className=" group cursor-pointer rounded-xl border p-3 space-y-4">
+     <div className=" flex flex-col items-center group cursor-pointer rounded-xl border p-3 space-y-4">
        {/*Image */}
-       <div className="aspect-square rounded-xl bg-gray-100 relative">
+       <div >
          <Image 
            src= {data.imageUrl}
-           fill
+           height={600}
+           width={400}
            alt=""
            className="aspect-square object-cover rounded-md items-center"
          />
