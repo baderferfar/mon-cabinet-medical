@@ -3,16 +3,17 @@ import { useCallback, useEffect, useState } from 'react';
 import { ChevronDownIcon } from 'lucide-react';
 
 
-import Image from 'next/image'
+//import Image from 'next/image'
 
 
 import MobileMenu from '@/components/mobile-menu';
 import NavbarItem from '@/components/navbar-item';
 import { ModeToggle } from './mode-toggle';
-import logo from '@/assets/images/impe.svg'
+// import logo from '@/assets/images/impe.svg'
 
 
 const TOP_OFFSET = 66;
+const name  = "Institut Médicale Paris Etoile";
 
 export const Navbar = () => {
  
@@ -43,16 +44,11 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full fixed ">
+    <nav className="w-full fixed z-0">
       <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
-        <Image 
-            alt="logo"
-            src= {logo}
-            height={80}
-            width={100}
-            className="dark:invert"
-            priority
-        />
+          <div className="flex flex-col  justify-center gap-6">
+               <h3 className="text-xl font-semibold">{name}</h3>
+         </div>
         <div className="flex-row ml-8 gap-7 hidden lg:flex ">
           <NavbarItem label="Accueil" href="/" />
           <NavbarItem label="Soins" href="/soins"/>

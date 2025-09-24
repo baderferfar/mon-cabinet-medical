@@ -2,10 +2,12 @@ import React from 'react'
 import { CabinetList } from './cabinet-list'
 import { data } from '@/data/cabinet'
 
+
 export const Cabinet = () => {
   return (
-    <div className='flex py-20 px-5 flex-col gap-5'>
-      <div className='text-white flex justify-center text-3xl font-extralight'>
+    <div className='flex py-20 px-5 flex-col gap-5  w-full' id="cabinet">
+       
+      <div className='text-foreground flex justify-center text-3xl font-extralight'>
          Notre Cabinet
       </div>
       <div>

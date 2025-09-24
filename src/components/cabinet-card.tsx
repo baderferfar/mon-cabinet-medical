@@ -16,8 +16,8 @@ export const CabinetCard: React.FC<CabinetCardProps> = ({data}) => {
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image 
           src= {data.imageUrl}
-          width={700}
-          height={500}
+          height={600}
+          width={400}
           alt=""
           className="aspect-square object-cover rounded-md items-center"
         />

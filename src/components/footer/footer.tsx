@@ -2,10 +2,8 @@ import { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
-import logo from '@/assets/images/impe.svg'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+// import logo from '@/assets/images/impe.svg'
+// import Image from "next/image";
 
 
 import {
@@ -15,7 +13,7 @@ import {
   FooterContent,
 } from "@/components/ui/footer";
 import { ModeToggle } from "@/components/mode-toggle";
-import Image from "next/image";
+
 
 interface FooterLink {
   text: string;
@@ -37,7 +35,11 @@ interface FooterProps {
   className?: string;
 }
 
+
+
 export default function FooterSection({
+
+  
   
   name = "Institut Médicale Paris Etoile",
   columns = [
@@ -45,13 +47,13 @@ export default function FooterSection({
       title: "Informations Pratiques",
       links: [
         { text: "27 Avenue de la Grande Armée 75017 Paris", href: "#" },
-        { text: "(33)-0601020304", href: "#" },
+        { text: "Tél. 06 02 02 02 02", href: "#" },
         { text: "Doctolib ou par téléphone", href: "#" },
         { text: "Lun-Ven: 9h-18h Sam: 9h-13h", href: "#" },      
       ],
     },
     {
-      title: "Company",
+      title: "Liens rapides",
       links: [
         { text: "Accueil", href: "/" },
         { text: "Soins", href: "/soins" },
@@ -73,35 +75,28 @@ export default function FooterSection({
       links: [
         { text: "Facebook", href: "#" },
         { text: "Instagram", href: "#" },
-        { text: "X", href: "#" },
-        { text: "Contact", href: "/contact" },
+        { text: "X(twitter)", href: "#" },
+        { text: "Contactez-nous", href: "/contact" },
       ],
     },
   ],
   copyright = "© 2025 Yasmina Ferfar. All rights reserved",
   policies = [
-    { text: "Privacy Policy", href: "https://www.launchuicomponents.com/" },
-    { text: "Terms of Service", href: "https://www.launchuicomponents.com/" },
+    { text: "Privacy Policy", href: "#" },
+    { text: "Terms of Service", href: "#" },
   ],
   showModeToggle = true,
   className,
 }: FooterProps) {
   return (
     
-    <footer className={cn("bg-emerald-600 w-full mt-8", className)}>
+    <footer className={cn("bg-emerald-500 text-black w-full mt-8", className)}>
       <div className="max-w-container mx-auto">
         <Footer>
           <FooterContent className="px-4">
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
               <div className="flex items-center gap-2">
-               <Image 
-                  alt="logo"
-                  src= {logo}
-                  height={80}
-                  width={100}
-                  className="dark:invert"
-                  priority
-                />
+
                 <div className="flex flex-col  justify-center gap-6">
                   <h3 className="text-xl font-semibold">{name}</h3>
                   <p className="text-sm "> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
@@ -115,7 +110,7 @@ export default function FooterSection({
                     <a
                       key={linkIndex}
                       href={link.href}
-                      className="text-muted-foreground text-sm"
+                      className="text-sm"
                     >
                       {link.text}
                     </a>
@@ -126,20 +121,23 @@ export default function FooterSection({
           </FooterContent>
           
           <FooterBottom>
-            <div>{copyright}</div>
-            <div className="flex items-center gap-2">
-              {policies.map((policy, index) => (
-                <a key={index} href={policy.href}>
-                  {policy.text}
-                </a>
-              ))}
-              {showModeToggle && <ModeToggle />}
+          <div className="w-full flex items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center w-full">
+              <div>{copyright}</div>
+              <div className="flex items-center gap-2">
+                {policies.map((policy, index) => (
+                  <a key={index} href={policy.href}>
+                    {policy.text}
+                  </a>
+                ))}
+                {showModeToggle && <ModeToggle />}
+              </div>
             </div>
+          </div>
           </FooterBottom>
         </Footer>
       </div>
     </footer>
-
     
   );
 }

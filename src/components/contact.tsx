@@ -20,6 +20,8 @@ import {
 } from "@/components/ui/select";
 
 import { send } from '@/lib/email';
+import { ContactList } from './contact-list';
+import { data } from '@/data/contact-info';
 
 export const Contact = () => {
     
@@ -42,12 +44,13 @@ export const Contact = () => {
     }
   return (
     <div className='flex flex-col  gap-5 py-20 px-5'>
-      <div className='text-white  flex justify-center text-3xl font-extralight'>
+      <div className='text-foreground  flex justify-center text-3xl font-extralight'>
         <a href="https://www.doctolib.fr/angiologue/paris/yasmina-ferfar-fbd22b47-cfb1-4d74-934e-4bd692667242/" >Prendre Rendez-vous</a>
       </div>
       <div>
         <p className='font-extralight text-2xl text-center'>Contactez-nous pour une consultation personnalisée</p>
       </div>
+      <ContactList items={data}/>
       <div className="gap-5 flex flex-col items-center justify-center">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 md:p-8 w-[100%] sm:w-[500px] lg:w-[600px] space-y-8">
@@ -63,7 +66,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Nom complet</FormLabel>
                       <FormControl>
-                        <Input placeholder="Votre nom" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40" placeholder="Votre nom" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -77,7 +80,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input type= "email" placeholder="votre email" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40" type= "email" placeholder="votre email" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -90,7 +93,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Téléphone</FormLabel>
                       <FormControl>
-                        <Input placeholder="06 12 34 65 78" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40" placeholder="06 12 34 65 78" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -123,6 +126,7 @@ export const Contact = () => {
                     </FormItem> 
                   )}
                 />
+                
                 <FormField
                   control={form.control}
                   name="message"
@@ -130,7 +134,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Message (500 caractères au maximum)</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Décrivez votre demande" {...field} />
+                        <Textarea className = "hover:opacity-70 opacity-40" placeholder="Décrivez votre demande" {...field} />
                       </FormControl>
                       <FormMessage /> 
                     </FormItem> 
@@ -144,7 +148,7 @@ export const Contact = () => {
                   <AlertTitle>{error}</AlertTitle>
                 </Alert>
               )} 
-              <Button type="submit" className="w-full" disabled={pending}>
+              <Button type="submit"  className="w-full bg-emerald-500 text-black" disabled={pending}>
                   {pending ? (
                     <Loader2 className="size-4 animate-spin" />
                   ) : (

@@ -12,12 +12,13 @@ interface SoinCardProps {
 export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
  
   return (
-    <div className=" group cursor-pointer rounded-xl border p-3 space-y-4">
+    <div className=" flex flex-col items-center group cursor-pointer rounded-xl border p-3 space-y-4 mx-auto">
       {/*Image */}
-      <div className="aspect-square rounded-xl bg-gray-100 relative">
+      <div >
         <Image 
           src= {data.imageUrl}
-          fill
+          height={800}
+          width={600}
           alt=""
           className="aspect-square object-cover rounded-md items-center"
         />
@@ -31,7 +32,7 @@ export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
           {data.traitement}
         </p>
       </div>
-      {/* Table */}
+      {/* Table
       <div className="text-xl flex flex-col justify-between font-extralight ">
          <ul className="list-disc space-y-1 space-x-4 ml-10">
             <li>{data.caracteristique.libelle_1} </li>
@@ -40,6 +41,7 @@ export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
          </ul>
         
       </div>
+       */}
     </div>
   )
 }
