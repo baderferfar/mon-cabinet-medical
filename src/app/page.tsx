@@ -30,9 +30,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="gap-5 flex flex-col items-center justify-center ">
-      <div className="w-full">
-      <Accueil/>
-      </div>
+
+      <Accueil/>l
       <Soins/>
       <Equipe/>
       <Cabinet/>
