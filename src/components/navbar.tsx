@@ -56,7 +56,7 @@ export const Navbar = () => {
           <NavbarItem label="Cabinet" href="/cabinet"/>
           <NavbarItem label="Contact" href="/contact"/>
         </div>
-        <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row justify-between gap-2 ml-20 cursor-pointer relative">
+        <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row justify-between gap-2 ml-10 cursor-pointer relative">
          
           <MenuIcon className="w-6 text-foreground fill-white "  />
           <ChevronDownIcon className={`w-4 text-foreground fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />

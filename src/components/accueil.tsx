@@ -10,7 +10,7 @@ export const Accueil = () => {
   return (
     
    <div id="accueil" className='text-foreground bg-[url("/images/cabinet/img-cabinet-2.jpg")] bg-no-repeat  
-    opacity-40 py-15 px-5 z-0 flex flex-col justify-center  h-[1200px] md:h-[1000px] w-full bg-cover bg-center '>
+    opacity-40 py-20 px-5 z-0 flex flex-col justify-center  h-[1200px] md:h-[1000px] w-full bg-cover bg-center '>
       
       <p className='text-center text-opacity-95 text-black text-5xl font-light z-50  '>L&apos;Excellence Médicale au Service de la Beauté des Jambes et du Visage</p>
       <div className='bg-transparent text-lg text-black font-light mt-10 max-w-4xl mx-auto z-50'>
@@ -32,7 +32,7 @@ export const Accueil = () => {
             alt="separator" 
             height={50}
             width={50}
-            className='ml-100 md:ml-200'
+            className='ml-75 md:ml-200'
           />            
 
           </div>

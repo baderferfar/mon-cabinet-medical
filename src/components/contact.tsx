@@ -106,9 +106,9 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Soin souhaité</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value} >
-                          <FormControl>
-                            <SelectTrigger className='bg-white text-black hover:opacity-70 opacity-40'>
-                              <SelectValue className="" placeholder="Selectionnez un soin"  {...field}/>
+                          <FormControl className='bg-white text-black hover:opacity-70 opacity-40'>
+                            <SelectTrigger >
+                              <SelectValue className="bg-white text-black hover:opacity-70 opacity-40" placeholder="Selectionnez un soin"  {...field}/>
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className='bg-black text-white'>
