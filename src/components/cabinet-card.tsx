@@ -13,7 +13,7 @@ export const CabinetCard: React.FC<CabinetCardProps> = ({data}) => {
   return (
     <div className=" group cursor-pointer rounded-xl border p-3 space-y-4">
       {/*Image */}
-      <div className="aspect-square rounded-xl bg-gray-100 relative">
+      <div>
         <Image 
           src= {data.imageUrl}
           height={600}

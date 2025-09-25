@@ -10,7 +10,7 @@ interface SoinListProps {
 
 export const SoinList: React.FC<SoinListProps> = ({items}) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mt-15 mb-5 mr-4 ml-4">
       
       { items.length === 0 && <NoResults />}
       <div className="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-4 mr-4">

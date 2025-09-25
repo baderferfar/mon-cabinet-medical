@@ -12,7 +12,7 @@ import {
   FooterColumn,
   FooterContent,
 } from "@/components/ui/footer";
-import { ModeToggle } from "@/components/mode-toggle";
+// import { ModeToggle } from "@/components/mode-toggle";
 
 
 interface FooterLink {
@@ -85,25 +85,25 @@ export default function FooterSection({
     { text: "Privacy Policy", href: "#" },
     { text: "Terms of Service", href: "#" },
   ],
-  showModeToggle = true,
+  // showModeToggle = true,
   className,
 }: FooterProps) {
   return (
     
-    <footer className={cn("bg-emerald-500 text-black w-full mt-8", className)}>
+    <footer className={cn("bg-black text-white w-full mt-8 ml-4 mr-4", className)}>
       <div className="max-w-container mx-auto">
         <Footer>
           <FooterContent className="px-4">
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
               <div className="flex items-center gap-2">
-
                 <div className="flex flex-col  justify-center gap-6">
                   <h3 className="text-xl font-semibold">{name}</h3>
                   <p className="text-sm "> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
                 </div>
               </div>
             </FooterColumn>
-            {columns.map((column, index) => (
+            <div className="col-span-3 sm:col-span-4 md:col-span-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {columns.map((column, index) => (
                 <FooterColumn key={index}>
                   <h3 className="text-md pt-1 font-semibold">{column.title}</h3>
                   {column.links.map((link, linkIndex) => (
@@ -117,11 +117,12 @@ export default function FooterSection({
                   ))}
                 </FooterColumn>
               ))}
+            </div>
 
           </FooterContent>
           
           <FooterBottom>
-          <div className="w-full flex items-center">
+          <div className="w-full flex items-center text-white">
             <div className="flex flex-col md:flex-row justify-between items-center w-full">
               <div>{copyright}</div>
               <div className="flex items-center gap-2">
@@ -130,7 +131,7 @@ export default function FooterSection({
                     {policy.text}
                   </a>
                 ))}
-                {showModeToggle && <ModeToggle />}
+                {/*{showModeToggle && <ModeToggle />}*/}
               </div>
             </div>
           </div>

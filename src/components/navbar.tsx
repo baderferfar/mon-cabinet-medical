@@ -1,6 +1,6 @@
 "use client"
 import { useCallback, useEffect, useState } from 'react';
-import { ChevronDownIcon } from 'lucide-react';
+import { ChevronDownIcon, MenuIcon } from 'lucide-react';
 
 
 //import Image from 'next/image'
@@ -8,7 +8,7 @@ import { ChevronDownIcon } from 'lucide-react';
 
 import MobileMenu from '@/components/mobile-menu';
 import NavbarItem from '@/components/navbar-item';
-import { ModeToggle } from './mode-toggle';
+// import { ModeToggle } from './mode-toggle';
 // import logo from '@/assets/images/impe.svg'
 
 
@@ -44,7 +44,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full fixed z-0">
+    <nav className="w-full fixed z-50">
       <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
           <div className="flex flex-col  justify-center gap-6">
                <h3 className="text-xl font-semibold">{name}</h3>
@@ -56,16 +56,22 @@ export const Navbar = () => {
           <NavbarItem label="Cabinet" href="/cabinet"/>
           <NavbarItem label="Contact" href="/contact"/>
         </div>
-        <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
-          <p className="text-foreground text-sm">Browse</p>
+        <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row justify-between gap-2 ml-20 cursor-pointer relative">
+         
+          <MenuIcon className="w-6 text-foreground fill-white "  />
           <ChevronDownIcon className={`w-4 text-foreground fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
+         
           <MobileMenu visible={showMobileMenu} />
         </div>
-        <div className="flex flex-row ml-auto gap-7 items-center">
-          <div>
-            <ModeToggle />          
+        {/*
+          <div className="flex flex-row ml-auto gap-7 items-center">
+      
+            <div>
+              <ModeToggle />          
+            </div>
+        
           </div>
-        </div>
+         */}
       </div>
     </nav>
   )

@@ -43,7 +43,7 @@ export const Contact = () => {
      send(data); 
     }
   return (
-    <div className='flex flex-col  gap-5 py-20 px-5'>
+    <div className='flex flex-col z-0 gap-5 py-20 px-5 bg-black text-white'>
       <div className='text-foreground  flex justify-center text-3xl font-extralight'>
         <a href="https://www.doctolib.fr/angiologue/paris/yasmina-ferfar-fbd22b47-cfb1-4d74-934e-4bd692667242/" >Prendre Rendez-vous</a>
       </div>
@@ -66,7 +66,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Nom complet</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40" placeholder="Votre nom" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" placeholder="Votre nom" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -80,7 +80,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40" type= "email" placeholder="votre email" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" type= "email" placeholder="votre email" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -93,7 +93,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Téléphone</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40" placeholder="06 12 34 65 78" {...field} />
+                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" placeholder="06 12 34 65 78" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -105,13 +105,13 @@ export const Contact = () => {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Soin souhaité</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} defaultValue={field.value} >
                           <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Selectionnez un soin"  {...field}/>
+                            <SelectTrigger className='bg-white text-black hover:opacity-70 opacity-40'>
+                              <SelectValue className="" placeholder="Selectionnez un soin"  {...field}/>
                             </SelectTrigger>
                           </FormControl>
-                          <SelectContent>
+                          <SelectContent className='bg-black text-white'>
                             <SelectItem value="Traitement des varices">Traitement des varices</SelectItem>
                             <SelectItem value="Injection Botox">Injection Botox</SelectItem>
                             <SelectItem value="Acide hyalurique">Acide hyalurique</SelectItem>
@@ -134,7 +134,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Message (500 caractères au maximum)</FormLabel>
                       <FormControl>
-                        <Textarea className = "hover:opacity-70 opacity-40" placeholder="Décrivez votre demande" {...field} />
+                        <Textarea className = "bg-white text-black hover:opacity-70 opacity-40" placeholder="Décrivez votre demande" {...field} />
                       </FormControl>
                       <FormMessage /> 
                     </FormItem> 
@@ -148,7 +148,7 @@ export const Contact = () => {
                   <AlertTitle>{error}</AlertTitle>
                 </Alert>
               )} 
-              <Button type="submit"  className="w-full bg-emerald-500 text-black" disabled={pending}>
+              <Button type="submit"  className="w-full bg-black text-white" disabled={pending}>
                   {pending ? (
                     <Loader2 className="size-4 animate-spin" />
                   ) : (

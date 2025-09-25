@@ -31,10 +31,10 @@ export default function RootLayout({
           
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="light"
             enableSystem
           >
-            <div className="fixed top-0 left-0 right-0 z-40">
+            <div className="fixed top-0 left-0 right-0 z-80">
                 <Navbar/>
             </div>
 

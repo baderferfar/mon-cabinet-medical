@@ -12,7 +12,7 @@ interface SoinCardProps {
 export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
  
   return (
-    <div className=" flex flex-col items-center group cursor-pointer rounded-xl border p-3 space-y-4 mx-auto">
+    <div className=" flex flex-col items-center group cursor-pointer rounded-xl border p-3 space-y-4 mx-auto mt-15">
       {/*Image */}
       <div >
         <Image 
@@ -24,7 +24,7 @@ export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
         />
       </div>
       {/*Caractéristiques*/}
-      <div className=" font-extralight flex flex-col gap-2">
+      <div className=" font-light flex flex-col gap-2">
         <p className="text-2xl">
           {data.title}
         </p>

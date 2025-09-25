@@ -12,7 +12,7 @@ export const CabinetList: React.FC<CabinetListProps> = ({items}) => {
     <div className="space-y-4 w-full">
       
       { items.length === 0 && <NoResults />}
-      <div className="flex flex-row gap-10 ml-10 mr-10 items-center justify-center">
+      <div className="flex flex-row gap-5 ml-5 mr-5 items-center justify-center">
         {(items).map((item)=> (
             <CabinetCard key={item.id} data={item} />
         ))}
