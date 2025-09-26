@@ -4,7 +4,7 @@ export const data =[
         id: "1", 
         iconUrl: "/icons/contact/iconAddress.svg",
         title: "Adresse",
-        libelle1: "27, avenue de la Grande armée",
+        libelle1: "26, avenue de la Grande armée",
         libelle2: "75017 Paris,",
         libelle3: "France",
     },
@@ -14,7 +14,7 @@ export const data =[
         title: "Rendez-vous",
         libelle1: "Sur Doctolib ",
         libelle2: "ou par téléphone",
-        libelle3: "01 45 74 20 00",
+        libelle3: "01 86 04 38 20",
     },
     {
         id: "3",

@@ -31,6 +31,12 @@ export const SoinCard: React.FC<SoinCardProps> = ({data}) => {
         <p className="text-xl">
           {data.traitement}
         </p>
+        <p className="text-xl">
+          {data.traitement2}
+        </p>
+        <p className="text-xl">
+          {data.traitement3}
+        </p>
       </div>
       {/* Table
       <div className="text-xl flex flex-col justify-between font-extralight ">

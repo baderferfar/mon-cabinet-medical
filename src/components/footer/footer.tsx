@@ -46,8 +46,8 @@ export default function FooterSection({
     {
       title: "Informations Pratiques",
       links: [
-        { text: "27 Avenue de la Grande Armée 75017 Paris", href: "#" },
-        { text: "Tél. 06 02 02 02 02", href: "#" },
+        { text: "26 Avenue de la Grande Armée 75017 Paris", href: "#" },
+        { text: "Tél. 01 86 04 38 20", href: "#" },
         { text: "Doctolib ou par téléphone", href: "#" },
         { text: "Lun-Ven: 9h-18h Sam: 9h-13h", href: "#" },      
       ],

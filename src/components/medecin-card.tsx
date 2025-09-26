@@ -33,14 +33,6 @@
            {data.specialite}
          </p>
         </div>
-        <div className="font-extralight flex flex-col gap-2" > 
-          <p className="text-2xl">
-            {data.question}
-          </p>
-          <p className="text-xl">
-            {data.reponse}
-          </p>
-         </div>
        </div>
      </div>
    )

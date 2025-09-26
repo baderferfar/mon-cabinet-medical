@@ -5,6 +5,8 @@ export interface Soin {
     imageUrl: string
     title: string
     traitement: string
+    traitement2: string
+    traitement3: string
 
 }
 
@@ -13,8 +15,6 @@ export interface Medecin {
     imageUrl: string
     name: string
     specialite: string
-    question: string
-    reponse: string 
 }
 
 export interface Cabinet {

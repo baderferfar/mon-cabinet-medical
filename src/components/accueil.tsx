@@ -14,28 +14,17 @@ export const Accueil = () => {
       
       <p className='text-center text-opacity-95 text-black text-5xl font-light z-50  '>L&apos;Excellence Médicale au Service de la Beauté des Jambes et du Visage</p>
       <div className='bg-transparent text-lg text-black font-light mt-10 max-w-4xl mx-auto z-50'>
-          <Image 
-            src="/icons/icon-guillemet.png" 
-            alt="citation"
-            height={50}
-            width={50}
-          />                        
-          <p>Des protocoles de soins sur mesure</p>
-          <p>Chaque patiente est unique et présente ses problématiques. Nous sommes à l’écoute et y répondons</p>
-          <p>avec bienveillance et professionnalisme. La beauté est celle qui respecte votre identité et qui vous</p>
-          <p>propose des solutions synergiques (laser, injection, médispa) permettant d’obtenir d’excellents</p>
-          <p>résultats mais aussi et surtout de les pérenniser. Nous avons les clés à toutes les problématiques</p>
-          <p>mais avant tout nous vous aidons aussi à hiérarchiser ces dernières pour que tout protocole de soins</p>
-          <p>établi lors d’une consultation médicale puisse vous garantir un résultat naturel et à long terme.</p>
-          <Image 
-            src="/icons/icon-guillemet.png" 
-            alt="separator" 
-            height={50}
-            width={50}
-            className='ml-75 md:ml-200'
-          />            
-
-          </div>
+                              
+          <p>❝Des protocoles de soins sur mesure</p>
+          <p>Chaque patiente est unique et présente ses problématiques.</p>
+          <p>Nous sommes à l’écoute et y répondons avec bienveillance et professionnalisme.</p>
+          <p>La beauté est celle qui respecte votre identité et qui vous propose des</p>
+          <p>solutions synergiques (laser, injection, médispa) permettant d’obtenir d’excellents</p>
+          <p>résultats mais aussi et surtout de les pérenniser.</p>
+          <p>Nous avons les clés à toutes les problématiques mais avant tout</p>
+          <p>nous vous aidons aussi à hiérarchiser ces dernières pour que tout protocole de soins  établi</p>
+          <p>lors d’une consultation médicale puisse vous garantir un résultat naturel et à long terme.❞</p>
+        </div>
       <div className='flex justify-center gap-10 mt-10 flex-col sm:flex-row items-center'>
         <Button
           size={'lg'}

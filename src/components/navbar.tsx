@@ -47,9 +47,9 @@ export const Navbar = () => {
     <nav className="w-full fixed z-50">
       <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
           <div className="flex flex-col  justify-center gap-6">
-               <h3 className="text-xl font-semibold">{name}</h3>
+               <h3 className="text-xl font-semibold mr-5">{name}</h3>
          </div>
-        <div className="flex-row ml-8 gap-7 hidden lg:flex ">
+        <div className="flex-row items-start gap-7 hidden lg:flex ">
           <NavbarItem label="Accueil" href="/" />
           <NavbarItem label="Soins" href="/soins"/>
           <NavbarItem label="Equipe" href="/equipe"/>

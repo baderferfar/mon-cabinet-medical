@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="gap-5 flex flex-col items-center justify-center ">
 
-      <Accueil/>l
+      <Accueil/>
       <Soins/>
       <Equipe/>
       <Cabinet/>
