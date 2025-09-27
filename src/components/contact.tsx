@@ -66,7 +66,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Nom complet</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" placeholder="Votre nom" {...field} />
+                        <Input className = "hover:opacity-70 opacity-30 bg-white text-black" placeholder="Votre nom" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -80,7 +80,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" type= "email" placeholder="votre email" {...field} />
+                        <Input className = "hover:opacity-70 opacity-30 bg-white text-black" type= "email" placeholder="votre email" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -93,7 +93,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Téléphone</FormLabel>
                       <FormControl>
-                        <Input className = "hover:opacity-70 opacity-40 bg-white text-black" placeholder="06 12 34 65 78" {...field} />
+                        <Input className = "hover:opacity-70 opacity-30 bg-white text-black" placeholder="Votre numéro de téléphone" {...field} />
                       </FormControl>
                       <FormMessage /> 
                       </FormItem> 
@@ -134,7 +134,7 @@ export const Contact = () => {
                     <FormItem>
                       <FormLabel>Message (500 caractères au maximum)</FormLabel>
                       <FormControl>
-                        <Textarea className = "bg-white text-black hover:opacity-70 opacity-40" placeholder="Décrivez votre demande" {...field} />
+                        <Textarea className = "bg-white text-black hover:opacity-70 opacity-40" placeholder="Décrivez votre demande..." {...field} />
                       </FormControl>
                       <FormMessage /> 
                     </FormItem> 

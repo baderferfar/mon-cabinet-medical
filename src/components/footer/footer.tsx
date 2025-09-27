@@ -64,10 +64,11 @@ export default function FooterSection({
         {
       title: "Nos Spécialités",
       links: [
-        { text: "Traitement des varices", href: "#" },
-        { text: "Injections esthétiques", href: "#" },
-        { text: "Soins du visage", href: "#" },
-        { text: "Drainage lymphatiques", href: "#" },
+        { text: "Varicosité, Lipoedemie,", href: "#" },
+        { text: "Epilation laser, Rajeunissement,", href: "#" },
+        { text: "Taches pigmentaires, Blepharoplastie médicale,", href: "#" },
+        { text: "Rhinoplatie médicale, Sécheresse vaginale,", href: "#" },
+        { text: "Injections botox et acide hyaluronique.", href: "#" },
       ],
     },
     {
@@ -146,6 +147,5 @@ export default function FooterSection({
         </Footer>
       </div>
     </footer>
-    
   );
 }
