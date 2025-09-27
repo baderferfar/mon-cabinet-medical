@@ -66,7 +66,7 @@ export default function FooterSection({
       links: [
         { text: "Varicosité, Lipoedemie,", href: "#" },
         { text: "Epilation laser, Rajeunissement,", href: "#" },
-        { text: "Taches pigmentaires, Blepharoplastie médicale,", href: "#" },
+        { text: "Taches pigmentaires, Blépharoplastie médicale,", href: "#" },
         { text: "Rhinoplatie médicale, Sécheresse vaginale,", href: "#" },
         { text: "Injections botox et acide hyaluronique.", href: "#" },
       ],
