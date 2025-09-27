@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { ChevronDownIcon, MenuIcon } from 'lucide-react';
 
 
-import Image from 'next/image'
+// import Image from 'next/image'
 
 
 import MobileMenu from '@/components/mobile-menu';
@@ -13,7 +13,8 @@ import NavbarItem from '@/components/navbar-item';
 
 
 const TOP_OFFSET = 66;
-// const name  = "Institut Médicale Paris Etoile";
+const LibelleName = "Clinique Médecine Esthétique Paris Etoile";
+
 
 export const Navbar = () => {
  
@@ -46,16 +47,20 @@ export const Navbar = () => {
   return (
     <nav className="w-full fixed z-50">
       <div className={`px-5 py-5 flex flex-row  justify-center  transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
-          <div className="mr-30" >
-               {/*<h3 className="text-xl font-semibold mr-5">{name}</h3>*/}
+          <div className="mr-25" >
+            <div className='flex flex-col items-center justify-center'>
+               <h3 className="text-xl font-semibold w-45 text-center5">{LibelleName}</h3>
+               
+            </div>   
+               {/*
                <Image
-                  src="/impe.svg"
-                  alt="Logo"
-                  width={60}
-                  height={60}
-                  className="w-auto h-12">
-
+                    src="/impe.svg"
+                    alt="Logo"
+                    width={60}
+                    height={60}
+                    className="w-auto h-12">
                </Image>
+               */}
          </div>
         <div className="flex-row items-start gap-7 hidden lg:flex text-gray-500">
           <NavbarItem label="Accueil" href="/" />

@@ -41,7 +41,7 @@ export default function FooterSection({
 
   
   
-  name = "Institut Médicale Paris Etoile",
+  name = "Clinique Médecine Esthétique Paris Etoile",
   columns = [
     {
       title: "Informations Pratiques",
@@ -64,7 +64,7 @@ export default function FooterSection({
         {
       title: "Nos Spécialités",
       links: [
-        { text: "Varicosité, Lipoedemie,", href: "#" },
+        { text: "Varicosité, Lipoedeme,", href: "#" },
         { text: "Epilation laser, Rajeunissement,", href: "#" },
         { text: "Taches pigmentaires, Blépharoplastie médicale,", href: "#" },
         { text: "Rhinoplatie médicale, Sécheresse vaginale,", href: "#" },
@@ -98,15 +98,15 @@ export default function FooterSection({
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
               <div className="flex items-center gap-2">
                 <div className="flex flex-col  justify-center gap-6">
-                  <h3 className="text-xl font-semibold " >{name}</h3>
+                  <h3 className="text-xl font-semibold w-45 text-center " >{name}</h3>
                   <p className="text-sm mb-2"> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
-                  <Image
+                  {/*<Image
                     src="/impe.svg"
                     alt="Logo"
                     width={60}
                     height={600}
                     className="w-auto h-12 mt-5" >
-                  </Image>
+                  </Image>*/}
                 </div>
               </div>
             </FooterColumn>

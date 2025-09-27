@@ -112,14 +112,19 @@ export const Contact = () => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className='bg-black text-white'>
-                            <SelectItem value="Traitement des varices">Traitement des varices</SelectItem>
-                            <SelectItem value="Injection Botox">Injection Botox</SelectItem>
-                            <SelectItem value="Acide hyalurique">Acide hyalurique</SelectItem>
-                            <SelectItem value="Peeling">Peeling</SelectItem>
-                            <SelectItem value="Hydrafacial">Hydrafacial</SelectItem>
+                            <SelectItem value="Injection botox ou acide hyaluronique">Injection botox / acide hyaluronique</SelectItem>
+                            <SelectItem value="Hydrafacial">Injection Botox</SelectItem>
                             <SelectItem value="Drainage lymphatique">Drainage lymphatique</SelectItem>
-                            <SelectItem value="Laser épilation">Laser épilation</SelectItem>
-                            <SelectItem value="Laser rajeunissement">Laser rajeunissement</SelectItem>
+                            <SelectItem value="Drainage Manuela Shala">Drainage Manuela Shala</SelectItem>
+                            <SelectItem value="Laser épilatoire">Laser épilatoire</SelectItem>
+                            <SelectItem value="rajeunissement des mains">rajeunissement des mains</SelectItem>
+                            <SelectItem value="Peeling">Peeling</SelectItem>
+                            <SelectItem value="Traitement des varicosités">Traitement des varicosités</SelectItem>
+                            <SelectItem value="Laser vaginal">Laser vaginal</SelectItem>
+                            <SelectItem value="Consultation lipoedeme">Consultation lipoedeme</SelectItem>
+                            <SelectItem value="Injection lévres">Injection lévres</SelectItem>
+                            <SelectItem value="Blépharoplastie médicale">Blépharoplastie médicale</SelectItem>
+                            <SelectItem value="Rhinoplastie médicale">Rhinoplastie médicale</SelectItem>
                           </SelectContent>
                       </Select>
                       <FormMessage /> 
