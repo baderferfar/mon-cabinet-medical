@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 //import logo from '@/assets/images/impe.svg'
-import Image from "next/image";
+//import Image from "next/image";
 
 
 import {
