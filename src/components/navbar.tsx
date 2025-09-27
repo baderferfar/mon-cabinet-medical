@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { ChevronDownIcon, MenuIcon } from 'lucide-react';
 
 
-//import Image from 'next/image'
+import Image from 'next/image'
 
 
 import MobileMenu from '@/components/mobile-menu';
@@ -13,7 +13,7 @@ import NavbarItem from '@/components/navbar-item';
 
 
 const TOP_OFFSET = 66;
-const name  = "Institut Médicale Paris Etoile";
+// const name  = "Institut Médicale Paris Etoile";
 
 export const Navbar = () => {
  
@@ -45,11 +45,19 @@ export const Navbar = () => {
 
   return (
     <nav className="w-full fixed z-50">
-      <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
-          <div className="flex flex-col  justify-center gap-6">
-               <h3 className="text-xl font-semibold mr-5">{name}</h3>
+      <div className={`px-5 py-5 flex flex-row  justify-center  transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
+          <div className="mr-30" >
+               {/*<h3 className="text-xl font-semibold mr-5">{name}</h3>*/}
+               <Image
+                  src="/impe.svg"
+                  alt="Logo"
+                  width={60}
+                  height={60}
+                  className="w-auto h-12">
+
+               </Image>
          </div>
-        <div className="flex-row items-start gap-7 hidden lg:flex ">
+        <div className="flex-row items-start gap-7 hidden lg:flex text-gray-500">
           <NavbarItem label="Accueil" href="/" />
           <NavbarItem label="Soins" href="/soins"/>
           <NavbarItem label="Equipe" href="/equipe"/>
@@ -58,8 +66,8 @@ export const Navbar = () => {
         </div>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row justify-between gap-2 ml-10 cursor-pointer relative">
          
-          <MenuIcon className="w-6 text-foreground fill-white "  />
-          <ChevronDownIcon className={`w-4 text-foreground fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
+          <MenuIcon className="w-6 text-gray-500   "  />
+          <ChevronDownIcon className={`w-4 text-gray-500 fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
          
           <MobileMenu visible={showMobileMenu} />
         </div>

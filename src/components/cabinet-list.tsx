@@ -9,7 +9,7 @@ interface CabinetListProps {
 
 export const CabinetList: React.FC<CabinetListProps> = ({items}) => {
   return (
-    <div className="space-y-4 w-full">
+    <div >
       
       { items.length === 0 && <NoResults />}
       <div className="flex flex-row gap-5 ml-5 mr-5 items-center justify-center">

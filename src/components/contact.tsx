@@ -43,7 +43,7 @@ export const Contact = () => {
      send(data); 
     }
   return (
-    <div className='flex flex-col z-0 gap-5 py-20 px-5 bg-black text-white'>
+    <div className='flex flex-col z-0 gap-5 py-20 px-5 bg-black text-white min-h-screen w-full'>
       <div className='text-foreground  flex justify-center text-3xl font-extralight'>
         <a href="https://www.doctolib.fr/angiologue/paris/yasmina-ferfar-fbd22b47-cfb1-4d74-934e-4bd692667242/" >Prendre Rendez-vous</a>
       </div>

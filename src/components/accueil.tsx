@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
-import Image from 'next/image';
+
 
 
 export const Accueil = () => {
@@ -9,10 +9,10 @@ export const Accueil = () => {
 
   return (
     
-   <div id="accueil" className='text-foreground bg-[url("/images/cabinet/img-cabinet-2.jpg")] bg-no-repeat  
-    opacity-40 py-20 px-5 z-0 flex flex-col justify-center  h-[1200px] md:h-[1000px] w-full bg-cover bg-center '>
+   <div id="accueil" className='text-foreground bg-[url("/images/cabinet/img-cabinet-flou.png")] bg-no-repeat  
+    py-20 px-5 z-0 flex flex-col justify-center  h-[1200px] md:h-[1000px] w-full bg-cover bg-center '>
       
-      <p className='text-center text-opacity-95 text-black text-5xl font-light z-50  '>L&apos;Excellence Médicale au Service de la Beauté des Jambes et du Visage</p>
+      <p className='text-center text-opacity-95 text-black text-5xl font-light z-50 ml-1 '>L&apos;Excellence Médicale au Service de la Beauté des Jambes et du Visage</p>
       <div className='bg-transparent text-lg text-black font-light mt-10 max-w-4xl mx-auto z-50'>
                               
           <p>❝Des protocoles de soins sur mesure</p>

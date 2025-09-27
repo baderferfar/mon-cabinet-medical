@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 
-// import logo from '@/assets/images/impe.svg'
-// import Image from "next/image";
+//import logo from '@/assets/images/impe.svg'
+import Image from "next/image";
 
 
 import {
@@ -97,8 +97,15 @@ export default function FooterSection({
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
               <div className="flex items-center gap-2">
                 <div className="flex flex-col  justify-center gap-6">
-                  <h3 className="text-xl font-semibold">{name}</h3>
-                  <p className="text-sm "> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
+                  <h3 className="text-xl font-semibold " >{name}</h3>
+                  <p className="text-sm mb-2"> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
+                  <Image
+                    src="/impe.svg"
+                    alt="Logo"
+                    width={60}
+                    height={600}
+                    className="w-auto h-12 mt-5" >
+                  </Image>
                 </div>
               </div>
             </FooterColumn>
