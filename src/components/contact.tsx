@@ -122,7 +122,7 @@ export const Contact = () => {
                             <SelectItem value="Traitement des varicosités">Traitement des varicosités</SelectItem>
                             <SelectItem value="Laser vaginal">Laser vaginal</SelectItem>
                             <SelectItem value="Consultation lipoedeme">Consultation lipoedeme</SelectItem>
-                            <SelectItem value="Injection lévres">Injection lévres</SelectItem>
+                            <SelectItem value="Injection lèvres">Injection lèvres</SelectItem>
                             <SelectItem value="Blépharoplastie médicale">Blépharoplastie médicale</SelectItem>
                             <SelectItem value="Rhinoplastie médicale">Rhinoplastie médicale</SelectItem>
                           </SelectContent>
