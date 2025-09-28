@@ -41,7 +41,7 @@ export default function FooterSection({
 
   
   
-  name = "Clinique Médecine Esthétique Paris Etoile",
+  name = "Harmonia Clinique Esthétique",
   columns = [
     {
       title: "Informations Pratiques",
@@ -64,11 +64,11 @@ export default function FooterSection({
         {
       title: "Nos Spécialités",
       links: [
-        { text: "Varicosité, Lipoedeme,", href: "#" },
-        { text: "Epilation laser, Rajeunissement,", href: "#" },
-        { text: "Taches pigmentaires, Blépharoplastie médicale,", href: "#" },
-        { text: "Rhinoplatie médicale, Sécheresse vaginale,", href: "#" },
-        { text: "Injections botox et acide hyaluronique.", href: "#" },
+        { text: "Varicosités, Lipoedeme,", href: "/soins/varicosites/" },
+        { text: "Epilation laser,Sécheresse vaginale ,", href: "/soins/epilation/" },
+        { text: "Taches pigmentaires, Rajeunissement,", href: "/soins/taches/" },
+        { text: "Rhinoplastie médicale, Blépharoplastie médicale,", href: "/soins/rhinoplastie/" },
+        { text: "Injections botox et acide hyaluronique.", href: "/soins/injections/" },
       ],
     },
     {

@@ -13,7 +13,7 @@ import NavbarItem from '@/components/navbar-item';
 
 
 const TOP_OFFSET = 66;
-const LibelleName = "Clinique Médecine Esthétique Paris Etoile";
+const libelleName = "Harmonia Clinique Esthétique";
 
 
 export const Navbar = () => {
@@ -49,7 +49,7 @@ export const Navbar = () => {
       <div className={`px-5 py-5 flex flex-row  justify-center  transition duration-500 ${showBackground ? 'bg-background text-foreground bg-opacity-90' : ''}`}>
           <div className="mr-25" >
             <div className='flex flex-col items-center justify-center'>
-               <h3 className="text-xl font-semibold w-45 text-center5">{LibelleName}</h3>
+               <h3 className="text-xl font-semibold w-45 text-center5">{libelleName}</h3>
                
             </div>   
                {/*

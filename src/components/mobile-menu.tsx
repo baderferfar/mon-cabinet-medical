@@ -17,7 +17,7 @@ const MobileMenu  = ({ visible }: MobileMenuProps) => {
         <div className="px-1.5 text-center hover:underline">
           <Link href="/soins">Soins</Link>
         </div>
-        <div className="px-1.5text-center hover:underline">
+        <div className="px-1.5 text-center hover:underline">
           <Link href="/equipe">Equipe</Link>
         </div>
         <div className="px-1.5 text-center hover:underline">
