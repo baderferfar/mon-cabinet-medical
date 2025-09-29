@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 //import logo from '@/assets/images/impe.svg'
-//import Image from "next/image";
+import Image from "next/image";
 
 
 import {
@@ -41,7 +41,7 @@ export default function FooterSection({
 
   
   
-  name = "Harmonia Clinique Esthétique",
+  name = "Esthe BF Clinic",
   columns = [
     {
       title: "Informations Pratiques",
@@ -96,18 +96,25 @@ export default function FooterSection({
         <Footer>
           <FooterContent className="px-4">
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
-              <div className="flex items-center gap-2">
-                <div className="flex flex-col  justify-center gap-6">
-                  <h3 className="text-xl font-semibold w-45 text-center " >{name}</h3>
-                  <p className="text-sm mb-2"> L&apos;excellence médicale au service de la beauté des jambes et du visage</p>
-                  {/*<Image
-                    src="/impe.svg"
+              <div className="flex flex-row  gap-2">
+                <div>
+                  <Image
+                    src="/logo/logoesthebfclinic.png"
                     alt="Logo"
                     width={60}
-                    height={600}
-                    className="w-auto h-12 mt-5" >
-                  </Image>*/}
+                    height={60}
+                  >
+                  </Image>
                 </div>
+                <div className="flex flex-col items-center  justify-center gap-2 ">
+
+                  <h3 className="text-xl font-semibold w-45 text-center " >{name}</h3>
+                  <p className="text-sm "> L&apos;esthétique sur mesure, signée B & F.</p>
+ 
+                  
+                </div>
+                <div>
+               </div>
               </div>
             </FooterColumn>
             <div className="col-span-3 sm:col-span-4 md:col-span-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
