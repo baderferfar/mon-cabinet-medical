@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const TOP_OFFSET = 66;
 const libelleName = "Esthe BF Clinic";
-const doctolibUrl = process.env.DOCTOLIB_YASMINA_FERFAR || ""
+// const doctolibUrl = process.env.DOCTOLIB_YASMINA_FERFAR || ""
 
 
 export const Navbar = () => {
@@ -53,14 +53,14 @@ export const Navbar = () => {
 
           <div className='flex flex-row items-center justify-start'>
               <Image
-                  src="/logo/logoesthebfclinic.png"
+                  src="/logo/esthebfclinic.png"
                   alt="Logo"
                   width={40}
                   height={40}
-                  className="w-auto h-12 mr-2" >
+                  className="w-auto h-12 mr-1" >
               </Image>
 
-              <h3 className="text-xl font-semibold w-40 mr-15 text-center text-gray-500">{libelleName}</h3>
+              <h3 className="text-xl font-semibold w-45 mr-4 text-center text-gray-500">{libelleName}</h3>
           </div>
           <div className="flex-row items-start gap-7 px-50 hidden lg:flex text-gray-500 text-xl font-semibold">
             <Link href="/">Accueil  |</Link>
@@ -70,12 +70,12 @@ export const Navbar = () => {
             <a href="https://www.doctolib.fr/angiologue/paris/yasmina-ferfar-fbd22b47-cfb1-4d74-934e-4bd692667242/" target="_blank" >Prendre RDV  | </a>
             <Link href="/contact">Contact</Link>
           </div>
-          <div onClick={toggleMobileMenu} className="lg:hidden md:hidden flex flex-row justify-between  mr-5 cursor-pointer relative">
+          <div onClick={toggleMobileMenu} className="lg:hidden md:hidden flex flex-row justify-between  mr-3 cursor-pointer relative">
             <MenuIcon className="w-6 text-gray-500   "  />
             <ChevronDownIcon className={`w-4 text-gray-500 fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
             
             { (showMobileMenu) &&
-                <div className="bg-black text-white w-28 absolute top-8 left-0 py-5 flex-col flex">
+                <div className="bg-black text-white w-25 text-sm  absolute top-8 left-0 py-5 flex-col flex">
                   <div className="flex flex-col gap-4 items-start">
                     <div className="px-0.5 text-center hover:underline">
                       <Link href="/">Accueil</Link>

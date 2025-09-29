@@ -99,7 +99,7 @@ export default function FooterSection({
               <div className="flex flex-row  gap-2">
                 <div>
                   <Image
-                    src="/logo/logoesthebfclinic.png"
+                    src="/logo/esthebfclinic.png"
                     alt="Logo"
                     width={60}
                     height={60}
