@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 
 
 export const Accueil = () => {
-  const doctolibUrl = process.env.DOCTOLIB_YASMINA_FERFAR || " ";
+  // const doctolibUrl = process.env.DOCTOLIB_YASMINA_FERFAR || " ";
 
   return (
     
@@ -36,7 +36,7 @@ export const Accueil = () => {
           asChild
           className=' text-black text-xl w-full sm:w-auto '
         >
-          <a href={doctolibUrl} target="_blank" rel="noopener noreferrer">
+          <a href="https://www.doctolib.fr/angiologue/paris/yasmina-ferfar-fbd22b47-cfb1-4d74-934e-4bd692667242/" target="_blank" rel="noopener noreferrer">
               Prendre rendez-vous 
           </a>
         </Button>
