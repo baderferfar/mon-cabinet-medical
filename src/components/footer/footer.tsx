@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 //import logo from '@/assets/images/impe.svg'
-import Image from "next/image";
+//import Image from "next/image";
 
 
 import {
@@ -41,7 +41,7 @@ export default function FooterSection({
 
   
   
-  name = "Esthe BF Clinic",
+  name = "B&F Clinic",
   columns = [
     {
       title: "Informations Pratiques",
@@ -98,13 +98,13 @@ export default function FooterSection({
             <FooterColumn className="col-span-3 sm:col-span-4 md:col-span-1">
               <div className="flex flex-row  gap-2">
                 <div>
-                  <Image
+                  {/*<Image
                     src="/logo/esthebfclinic.png"
                     alt="Logo"
                     width={60}
                     height={60}
                   >
-                  </Image>
+                  </Image>*/}
                 </div>
                 <div className="flex flex-col items-center  justify-center gap-2 ">
 
